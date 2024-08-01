@@ -1,0 +1,34 @@
+
+
+java:S3776
+"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Çµí‘J$f3516bfe-2fbb-4cf8-ad68-17459e6a1211
+f	java:S106"+Replace this use of System.out by a logger.(ßá¯·J$d8ac5a00-8019-45fa-ad59-3769c3068195
+f	java:S106"+Replace this use of System.out by a logger.(¦€¡âJ$783ae2bb-d82b-4da8-97c6-b709c9168c55
+f	java:S106"+Replace this use of System.out by a logger.(§®ó„J$8ca1106e-ea35-4077-b4ca-a0c2844490e7
+k	java:S106"+Replace this use of System.out by a logger.(–Ä¸ÀúÿÿÿÿJ$80039177-0129-4217-8738-82716825a0f7
+f	java:S106"+Replace this use of System.out by a logger.(€¹Ø¼J$ce66873c-3a2c-4dbd-9d84-762799fbaad8
+k	java:S106"+Replace this use of System.out by a logger.(˜ŒÇÏşÿÿÿÿJ$d5b83464-5651-44cc-904a-65b96967680f
+e	java:S106"+Replace this use of System.out by a logger.(Ó…Ó2J$d52ae705-bff6-44c2-8ebd-92139eb41132
+f	java:S106"+Replace this use of System.out by a logger.(ŠšÏÇJ$036310ae-716f-48d2-aefa-6acacda06d04
+†	java:S128T"LEnd this switch case with an unconditional break, return or throw statement.(û¿4J$0ea369ec-5c89-4181-9d22-3fcb5ab02fa8
+f	java:S106"+Replace this use of System.out by a logger.(Î¥¹çJ$b1d001a8-cc49-4807-9751-95b8d2e97c77
+f	java:S106"+Replace this use of System.out by a logger.(×™Ï•J$b9d45f9e-ce8c-4d90-84c2-059214b7f0c4
+f	java:S106"+Replace this use of System.out by a logger.(ŸİƒÒJ$a06ff878-7b9f-462f-bc15-8d7e2a7c5895
+f	java:S106!"+Replace this use of System.out by a logger.(Øé¶áJ$95be0e6f-6840-4836-a0d7-ed89c7c9bed6
+e	java:S106%"+Replace this use of System.out by a logger.(í´”;J$5fd680c3-c260-4179-bcc2-f7c18007601d
+k	java:S106'"+Replace this use of System.err by a logger.(ü¦ÿÿÿÿÿJ$6bd027c4-4661-4d53-b661-828303390316
+k	java:S106+"+Replace this use of System.out by a logger.(ÃÉÃÎøÿÿÿÿJ$2c6bcdec-ea29-4eda-9f29-d1a74c1c376a
+k	java:S106/"+Replace this use of System.out by a logger.(ãà“øÿÿÿÿJ$9d40be55-7739-44eb-b5a1-d1788ce22912
+f	java:S1061"+Replace this use of System.out by a logger.(´ÒáJ$b2b1c04f-fb93-4423-8115-d01fd3c72eae
+f	java:S1063"+Replace this use of System.out by a logger.(¾¯¦·J$74b332a1-3340-48ec-9e9d-7d3650f0d225
+f	java:S1068"+Replace this use of System.out by a logger.(ÿĞª…J$9cda6273-6b93-40ec-a585-2682aac04806
+f	java:S106:"+Replace this use of System.err by a logger.(Æô£ªJ$693ff514-3e07-480e-b174-45c6842832ff
+k	java:S106="+Replace this use of System.err by a logger.(š¨ÇüÿÿÿÿJ$6e7ff181-ecca-4fff-8517-352be2719fc8
+f	java:S106A"+Replace this use of System.out by a logger.(èõÛJ$2081926e-0ae4-40ba-9cd1-02b8a03ba1b5
+f	java:S106H"+Replace this use of System.out by a logger.(ƒ˜ÕJ$d5c4a90d-3382-420e-ab6f-6404829d00b7
+f	java:S106J"+Replace this use of System.err by a logger.(Œò‘J$94293003-cc40-4e82-968c-8c9300f4c2f1
+k	java:S106M"+Replace this use of System.err by a logger.(‚«‘óúÿÿÿÿJ$cccc314b-7b20-4167-82a0-a63cef5b656c
+
+java:S3457R"Q%n should be used in place of \n to produce the platform-specific line separator.(‡Ò’ºJ$0610c666-8dfb-45a3-8361-033ced6ae970
+f	java:S106R"+Replace this use of System.out by a logger.(‡Ò’ºJ$ec2a625a-735d-45a2-88ae-9de2d4fed82d
+k	java:S106W"+Replace this use of System.err by a logger.(ªÂü–úÿÿÿÿJ$e99bd73b-8aa7-40ff-9887-ef7e827beeb2
