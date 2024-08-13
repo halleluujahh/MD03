@@ -1,5 +1,29 @@
 
-½
-java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹¨¯¿J$0e923141-5293-4dfd-992c-76da7d650918
-
-java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(‰ˆ¶€J$ca89a6ab-a1b7-492c-8eeb-174ad6749311
+l
+java:S1192,"PDefine a constant instead of duplicating this literal "views/error.jsp" 3 times.(„½¹88õ¹á“2
+g
+java:S1192"JDefine a constant instead of duplicating this literal "catalogId" 3 times.(±ºíê8÷¹á“2
+
+java:S1989"kHandle the following exceptions that could be thrown by "findAllCategories": ServletException, IOException.(†Î­ıÿÿÿÿ8Ÿ¹á“2
+v
+java:S1989"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(±ºíê8”Ÿ¹á“2
+ƒ
+java:S1989""aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(˜¬ß“ıÿÿÿÿ8™Ÿ¹á“2
+{
+java:S1989&"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(Åöüèÿÿÿÿÿ8œŸ¹á“2
+
+java:S1989*"kHandle the following exceptions that could be thrown by "findAllCategories": ServletException, IOException.(†Î­ıÿÿÿÿ8 Ÿ¹á“2
+}
+java:S1989,"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(„½¹88¡Ÿ¹á“2
+
+java:S1989;"lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(áò‰øÿÿÿÿ8ªŸ¹á“2
+
+java:S1989H"kHandle the following exceptions that could be thrown by "findAllCategories": ServletException, IOException.(†Î­ıÿÿÿÿ8´Ÿ¹á“2
+}
+java:S1989J"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(„½¹88µŸ¹á“2
+{
+java:S1989P"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ìÅì÷şÿÿÿÿ8¸Ÿ¹á“2
+
+java:S1989X"kHandle the following exceptions that could be thrown by "findAllCategories": ServletException, IOException.(†Î­ıÿÿÿÿ8ÀŸ¹á“2
+}
+java:S1989Z"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(„½¹88ÂŸ¹á“2

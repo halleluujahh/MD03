@@ -1,0 +1,38 @@
+
+c
+java:S1192$"MDefine a constant instead of duplicating this literal "booklist.jsp" 5 times.(ý”þ€
+\
+java:S1192#"FDefine a constant instead of duplicating this literal "books" 5 times.(¼Î‰Ú
+a
+java:S1192"FDefine a constant instead of duplicating this literal "price" 4 times.(Ôé’‚úÿÿÿÿ
+b
+java:S1192"GDefine a constant instead of duplicating this literal "action" 4 times.(ã§ê¦úÿÿÿÿ
+q
+java:S1989 "[Handle the following exception that could be thrown by "parseFloat": NumberFormatException.(Ä‡ôã
+w
+java:S1989$"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ý”þ€
+n
+java:S1989'"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(‚Ûë,
+w
+java:S1989/"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ý”þ€
+o
+java:S19892"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(É¦øÒ
+|
+java:S19895"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(—™ýüÿÿÿÿÿ
+|
+java:S19898"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(–¿¬¡þÿÿÿÿ
+w
+java:S1989="aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ý”þ€
+f
+java:S1301E"KReplace this "switch" statement by "if" statements to increase readability.(ë´åÝþÿÿÿÿ
+<	java:S131E""Add a default case to this switch.(ë´åÝþÿÿÿÿ
+o
+java:S1989G"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ˆÛžƒ
+v
+java:S1989I"[Handle the following exception that could be thrown by "parseFloat": NumberFormatException.(¦—µ×ûÿÿÿÿ
+w
+java:S1989W"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ý”þ€
+q
+java:S1989["[Handle the following exception that could be thrown by "parseFloat": NumberFormatException.(ÉáÞ¦
+w
+java:S1989i"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ý”þ€
