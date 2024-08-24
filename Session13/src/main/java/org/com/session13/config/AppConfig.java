@@ -1,4 +1,4 @@
-package org.com.session11.config;
+package org.com.session13.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -11,6 +11,8 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.multipart.MultipartResolver;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
@@ -19,60 +21,78 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.Properties;
-
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = {"org.com.session11.repository.impl", "org.com.session11.service.impl", "org.com.session11.controller"})
+@ComponentScan(basePackages = {"org.com.session13.controller", "org.com.session13.service.impl", "org.com.session13.repository.impl", "org.com.session13.config"})
 @EnableTransactionManagement
 public class AppConfig {
-
+    //1. Cấu hình ViewResolver
     @Bean
     public ViewResolver viewResolver() {
-        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("/views/");
-        viewResolver.setSuffix(".jsp");
-        return viewResolver;
+        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+        resolver.setPrefix("/views/");
+        resolver.setSuffix(".jsp");
+        return resolver;
     }
 
+    //2. Cấu hình datasource kết nối với CSDL
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/Ecommerce_DB");
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/UploadFile_DB");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         return dataSource;
     }
 
-    public Properties getProperties() {
+    //3. Cấu hình hibernate properties
+    public Properties addionalProperties() {
         Properties properties = new Properties();
         properties.setProperty("hibernate.hbm2ddl.auto", "update");
+//        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8InnoDBDialect");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
         properties.setProperty("hibernate.show_sql", "true");
         return properties;
     }
 
+    //4. Cấu hình EntityManagerFactory
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
-        LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
-        entityManagerFactoryBean.setDataSource(dataSource());
-        entityManagerFactoryBean.setPackagesToScan("org.com.session11.model");
-        JpaVendorAdapter jpaVendorAdapter = new HibernateJpaVendorAdapter();
-        entityManagerFactoryBean.setJpaVendorAdapter(jpaVendorAdapter);
-        entityManagerFactoryBean.setJpaProperties(getProperties());
-        return entityManagerFactoryBean;
+        LocalContainerEntityManagerFactoryBean entityManagerFactory = new LocalContainerEntityManagerFactoryBean();
+        entityManagerFactory.setDataSource(dataSource());
+        entityManagerFactory.setPackagesToScan("org.com.session13.model");
+        JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
+        entityManagerFactory.setJpaVendorAdapter(vendorAdapter);
+        entityManagerFactory.setJpaProperties(addionalProperties());
+        return entityManagerFactory;
     }
 
+    //5. Cấu hình EntityManager
     @Bean
     @Qualifier(value = "entityManager")
     public EntityManager entityManager(EntityManagerFactory entityManagerFactory) {
         return entityManagerFactory.createEntityManager();
     }
 
+    //6. Cấu hình transaction
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
         transactionManager.setEntityManagerFactory(entityManagerFactory);
         return transactionManager;
+    }
+
+    //7. Cấu hình MultipartResolver
+    @Bean
+    public CommonsMultipartResolver multipartResolver(){
+        CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
+        // Set the maximum upload size per file in bytes (e.g., 5MB)
+        multipartResolver.setMaxUploadSizePerFile(5 * 1024 * 1024);
+        // Set the maximum upload size for the entire request (e.g., 20MB)
+        multipartResolver.setMaxUploadSize(20 * 1024 * 1024);
+        // Set the default encoding to UTF-8
+        multipartResolver.setDefaultEncoding("UTF-8");
+        return multipartResolver;
     }
 }
