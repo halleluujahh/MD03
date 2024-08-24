@@ -22,7 +22,7 @@ public class UploadFileServiceImp implements UploadFileService {
     private Storage storage;
     @Autowired
     private ServletContext servletContext;
-    private final String BUCK_NAME = "fir-60e00.appspot.com";
+    private final String BUCK_NAME = "buck_name";
 
     @Override
     public String uploadFileToLocal(MultipartFile multipartFile) {
