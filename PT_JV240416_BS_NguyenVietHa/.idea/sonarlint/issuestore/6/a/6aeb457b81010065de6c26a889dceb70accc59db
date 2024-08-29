@@ -1,0 +1,19 @@
+
+
+java:S1192 "HDefine a constant instead of duplicating this literal "product" 8 times.(›Ä“²øÿÿÿÿ8Ùÿ«‹š2J$64bb9e2f-2d30-4019-8915-95e3d52c1f36
+‘
+java:S1192I"NDefine a constant instead of duplicating this literal "productUpdate" 3 times.(Ÿ´­‹8Úÿ«‹š2J$230d7372-0ea4-4e24-b50f-1e531f383e6e
+™
+java:S1192="QDefine a constant instead of duplicating this literal "redirect:findAll" 3 times.(ÁÚÿşÿÿÿÿ8Úÿ«‹š2J$a9d10887-6a19-4152-be9e-61287b6d7629
+
+java:S11924"KDefine a constant instead of duplicating this literal "productAdd" 3 times.(¸†”ğ8Úÿ«‹š2J$2b55df1f-e410-4852-b2d7-ebb2a32ea0c8
+Œ
+java:S1192$"IDefine a constant instead of duplicating this literal "products" 3 times.(§ğñ8Úÿ«‹š2J$18a1e154-a63b-4410-a9be-10e3f89a7001
+
+java:S11923"JDefine a constant instead of duplicating this literal "categoryL" 4 times.(èò—8Úÿ«‹š2J$e14ca673-4ff0-49cf-a2ff-76321ee6b49e
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ûÿ«‹š2J$1d580ea8-bd8c-4c26-b98e-807ca10ce983
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ûÿ«‹š2J$bfc07ce2-2d7b-4807-9a30-07d2ef7d13e8
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ûÿ«‹š2J$e35a325a-28e5-4ead-93b3-3dcf37b26506

@@ -1,13 +1,13 @@
 
-j
-java:S1192"HDefine a constant instead of duplicating this literal "product" 3 times.(›¿ÚËıÿÿÿÿ8ÕÆ­†–2
-s
-java:S1192%"QDefine a constant instead of duplicating this literal "redirect:findAll" 3 times.(ÁÚÿşÿÿÿÿ8ÕÆ­†–2
-q
-java:S1192("ODefine a constant instead of duplicating this literal "redirect:error" 3 times.(ŒçùÕûÿÿÿÿ8ÕÆ­†–2
-]
-java:S4684#"@Replace this persistent entity with a simple POJO or DTO object.(ˆºÔÿ8ÚÆ­†–2
-L
-java:S1905/"*Remove this unnecessary cast to "Product".(İÃ¤íúÿÿÿÿ8ÜÆ­†–2
-]
-java:S46844"@Replace this persistent entity with a simple POJO or DTO object.(û˜·8ÜÆ­†–2
+
+java:S1192"HDefine a constant instead of duplicating this literal "product" 3 times.(›¿ÚËıÿÿÿÿ8ÕÆ­†–2J$04b82169-0b89-4895-ae91-d3753cb45222
+™
+java:S1192%"QDefine a constant instead of duplicating this literal "redirect:findAll" 3 times.(ÁÚÿşÿÿÿÿ8ÕÆ­†–2J$efceb8a2-9d53-4c3f-88c6-387a287b8771
+—
+java:S1192("ODefine a constant instead of duplicating this literal "redirect:error" 3 times.(ŒçùÕûÿÿÿÿ8ÕÆ­†–2J$10fdbdd6-7f6a-4f00-90a6-732855e53bd3
+ƒ
+java:S4684#"@Replace this persistent entity with a simple POJO or DTO object.(ˆºÔÿ8ÚÆ­†–2J$e6f9a5ac-0127-40de-9425-2ff4c52eb4b8
+r
+java:S1905/"*Remove this unnecessary cast to "Product".(İÃ¤íúÿÿÿÿ8ÜÆ­†–2J$c8e00f18-6361-487b-b1c5-afd4fdac85fa
+ƒ
+java:S46844"@Replace this persistent entity with a simple POJO or DTO object.(û˜·8ÜÆ­†–2J$1faad7d8-057e-4df1-9c33-3dacddfeef9c

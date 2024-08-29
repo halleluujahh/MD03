@@ -1,0 +1,13 @@
+
+
+java:S2184r"FCast one of the operands of this multiplication operation to a "long".(ÙÒˆşÿÿÿÿ8¨õ™2J$3da00581-a15d-450f-bb0f-a19be04a7ddb
+ˆ
+java:S2184t"FCast one of the operands of this multiplication operation to a "long".(Ş“~8¨õ™2J$a61c1825-8e53-44d0-ba8f-db7de9dfbbe4
+‰
+java:S1192/"FDefine a constant instead of duplicating this literal "UTF-8" 3 times.(ÀÆÀ8©¨õ™2J$9ed4b196-0591-48e6-bade-9208bde9c7ef
+©
+java:S1450""aRemove the "applicationContext" field and declare it as a local variable in the relevant methods.(î‡²şÿÿÿÿ8òï¤ğ™2J$d66894dd-fcea-4386-bb8e-6fb362188a9e
+
+java:S6831a"KRemove this redundant "@Qualifier" annotation and rely on the @Bean method.(¬ôÒê8ğ¤ğ™2J$9ba5b260-37b0-4303-8131-6203110902a1
+~
+java:S1068""6Remove this unused "applicationContext" private field.(î‡²şÿÿÿÿ8—ğ¤ğ™2J$433063e2-db72-423a-b0e3-546f5f389649

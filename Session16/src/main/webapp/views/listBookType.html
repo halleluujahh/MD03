@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Book Type Management</h2>
+<button><a th:href="@{create}">CREATE</a></button>
+<button><a th:href="@{/BookController/findAll}">Book Management</a></button>
+<table border="1">
+    <thead>
+    <tr>
+        <td>Type ID</td>
+        <td>Type Name</td>
+        <td>Description</td>
+        <td>Type Status</td>
+        <td colspan="2">Action</td>
+    </tr>
+    </thead>
+    <tbody th:each="booktype, loop:${bookTypeList}">
+    <tr th:object="${booktype}">
+        <td th:text="*{id}"></td>
+        <td th:text="*{typeName}"></td>
+        <td th:text="*{description}"></td>
+        <td th:text="*{typeStatus}"></td>
+        <td>
+            <button><a th:href="@{update(bookTypeId=*{id})}">UPDATE</a></button>
+            <button><a th:href="@{delete(bookTypeId=*{id})}">DELETE</a></button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

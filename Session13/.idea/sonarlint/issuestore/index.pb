@@ -37,3 +37,8 @@ S
 #src/main/webapp/views/employees.jsp,d\9\d91cac6275b9dee684c8625de98fd96ac2ef6097
 U
 %src/main/webapp/views/newEmployee.jsp,7\c\7c4c0f25521d9b1bbfdca8e9f9d7bd63a5052554
+O
+src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

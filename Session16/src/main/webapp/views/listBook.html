@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Book Management</h2>
+<button><a th:href="@{create}">Create</a></button>
+<button><a th:href="@{/BookTypeController/findAll}">Book Type Management</a></button>
+<table border="1">
+    <thead>
+    <tr>
+        <td>Book ID</td>
+        <td>Book Name</td>
+        <td>Book Price</td>
+        <td>Book Content</td>
+        <td>Book Create</td>
+        <td>Book Author</td>
+        <td>Book Status</td>
+        <td>Book Type</td>
+        <td colspan="2">Action</td>
+    </tr>
+    </thead>
+    <tbody th:each="book, loop:${listBook}">
+    <tr th:object="${book}">
+        <td th:text="*{id}"></td>
+        <td th:text="*{name}"></td>
+        <td th:text="*{price}"></td>
+        <td th:text="*{content}"></td>
+        <td th:text="*{create}"></td>
+        <td th:text="*{author}"></td>
+        <td th:switch="*{status}">
+            <span th:case="true">Active</span>
+            <span th:case="false">Inactive</span>
+            <span th:case="*">Other</span>
+        </td>
+        <td th:text="*{booktype.getTypeName()}"></td>
+        <td>
+            <button><a th:href="@{update(bookId=*{id})}">Update</a></button>
+            <button><a th:href="@{delete(bookId=*{id})}">Delete</a></button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

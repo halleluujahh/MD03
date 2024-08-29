@@ -1,0 +1,6 @@
+
+w	java:S1255"<This block of commented-out lines of code should be removed.(Ñü¿èJ$3c1407bd-91f0-4816-9c8e-1de75e8cb243
+Œ
+java:S6831I"KRemove this redundant "@Qualifier" annotation and rely on the @Bean method.(šßØûÿÿÿÿJ$7ba26507-4a77-4858-9f72-59632966a0fb
+–
+java:S1128"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ğùçøùÿÿÿÿJ$d9fd7878-2a6a-4617-b3af-dcc83692062c

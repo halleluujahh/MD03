@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .errors{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form th:action="@{doUpdate}" th:object="${bookType}" method="post">
+    <input th:name="bookTypeNameOld" th:value="*{typeName}" hidden="hidden" id="bookTypeNameOld" type="text">
+    <input hidden="hidden" th:field="*{id}" id="bookTypeId" type="text">
+    <div>
+        <label for="typename">Type Name</label>
+        <input th:field="*{typeName}" id="typename" type="text">
+        <div th:if="${#fields.hasErrors('typeName')}" th:errors="*{typeName}" class="errors"></div>
+        <div class="errors" th:text="${name}"></div>
+    </div>
+    <div>
+        <label for="description">Description</label>
+        <input th:field="*{description}" id="description" type="text">
+        <div th:if="${#fields.hasErrors('description')}" th:errors="*{description}" class="errors"></div>
+    </div>
+    <div>
+        <label for="typeStatus">Type Status</label>
+        <select th:field="*{typeStatus}" id="typeStatus">
+            <option th:value="true" th:selected="*{typeStatus == true}" th:text="ACTIVE"></option>
+            <option th:value="false" th:selected="*{typeStatus == false}" th:text="NOT_ACTIVE"></option>
+        </select>
+        <div th:if="${#fields.hasErrors('typeStatus')}" th:errors="*{typeStatus}" class="errors"></div>
+    </div>
+    <button type="submit">UPDATE</button>
+</form>
+</body>
+</html>

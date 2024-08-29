@@ -1,0 +1,15 @@
+
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ö¡íô™2J$caac9f39-46b5-42b6-9081-ac0a5618edcf
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ö¡íô™2J$d5aedf58-b506-45f8-b049-2e91edcf2f4f
+ˆ
+java:S1128"@Remove this unused import 'com.google.api.client.util.DateTime'.(˜³´Ÿúÿÿÿÿ8µÊ õ™2J$e2cc287a-6466-4111-b485-5fefd028c643
+w
+java:S1128"4Remove this unused import 'org.com.entity.Category'.(»ê×8¶Ê õ™2J$5fa707ab-b73b-4af5-94ed-3189b7093f0c
+…
+java:S1128"=Remove this unused import 'org.hibernate.type.LocalDateType'.(í©®şÿÿÿÿ8¶Ê õ™2J$2149e3fc-f182-4cf7-90a2-1ef81a9ab1a2
+q
+java:S1128"/Remove this unused import 'java.sql.Timestamp'.(èò½+8¶Ê õ™2J$6e57791a-182f-44d7-b69f-1ad4f2abc064
+|
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8¶Ê õ™2J$b6cf5e9b-b1e8-4082-a1e9-94f07ad45a1c

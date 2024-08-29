@@ -12,7 +12,7 @@ import java.io.InputStream;
 
 @Configuration
 public class FireBaseConfig {
-    private final String serviceAccountKeyPath = "pathToJsonFireBase";
+    private final String serviceAccountKeyPath = "D:\\PT-HN\\MD3-JavaBeFunda\\Session13\\src\\main\\webapp\\resources\\firebase.json";
 
     @Bean
     public Storage storage() throws IOException {

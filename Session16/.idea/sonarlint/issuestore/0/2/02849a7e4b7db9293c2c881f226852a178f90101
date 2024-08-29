@@ -1,0 +1,7 @@
+
+©
+java:S1450!"aRemove the "applicationContext" field and declare it as a local variable in the relevant methods.(î‡²şÿÿÿÿ8ò¯ ™2J$fbfe7014-afca-42d4-8dd3-2ee5c49a2915
+
+java:S6831`"KRemove this redundant "@Qualifier" annotation and rely on the @Bean method.(¬ôÒê8­ò¯ ™2J$5a6a398b-1607-48a7-a87b-401f50461198
+~
+java:S1068!"6Remove this unused "applicationContext" private field.(î‡²şÿÿÿÿ8°ò¯ ™2J$6a234da8-b7ca-4951-b78d-c3fc42f28de4

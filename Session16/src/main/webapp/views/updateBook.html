@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .errors{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<h2>Update Book</h2>
+<form th:action="@{doUpdate}" th:object="${book}" method="post">
+  <input th:name="bookNameOld" th:value="*{name}" hidden="hidden" id="bookNameOld" type="text">
+  <input th:field="*{id}" id="bookId" hidden="hidden" type="text">
+  <div><label for="bookName">Book Name</label>
+    <input th:field="*{name}" id="bookName" type="text">
+    <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="errors"></div>
+    <div class="errors" th:text="${name}"></div>
+  </div>
+  <div><label for="bookPrice">Book Price</label><input th:field="*{price}" id="bookPrice" type="number" min="1">
+    <div th:if="${#fields.hasErrors('price')}" th:errors="*{price}" class="errors"></div>
+  </div>
+  <div><label for="bookContent">Book Content</label>
+    <input id="bookContent" th:field="*{content}" type="text">
+    <div th:if="${#fields.hasErrors('content')}" th:errors="*{content}" class="errors"></div>
+  </div>
+  <div><label for="bookAuthor">Book Author</label><input id="bookAuthor" th:field="*{author}" type="text">
+    <div th:if="${#fields.hasErrors('author')}" th:errors="*{author}" class="errors"></div>
+  </div>
+  <div>
+    <label for="status">Book Status:</label>
+    <select th:field="*{status}" id="status">
+      <option th:value="true" th:selected="*{status == true}" th:text="ACTIVE"></option>
+      <option th:value="false" th:selected="*{status == false}" th:text="NOT_ACTIVE"></option>
+    </select>
+    <div th:if="${#fields.hasErrors('status')}" th:errors="*{status}" class="errors"></div>
+  </div>
+  <div>
+    <label for="bookTypeId">Book Type:</label>
+    <select id="bookTypeId" th:field="*{bookTypeId}">
+      <option value="">Select Book Type</option>
+      <option th:selected="${bt.id == book.bookTypeId}" th:each="bt:${listBookType}"
+              th:value="${bt.id}"
+              th:text="${bt.typeName}">
+      </option>
+    </select>
+    <div th:if="${#fields.hasErrors('bookTypeId')}" th:errors="*{bookTypeId}" class="errors"></div>
+  </div>
+  <button type="submit">UPDATE</button>
+</form>
+</body>
+</html>

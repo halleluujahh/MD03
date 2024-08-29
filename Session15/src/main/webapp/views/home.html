@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=”http://www.thymeleaf.org”>
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf Demo</title>
+</head>
+<body>
+<!-- insert fragment header -->
+<header th:insert="layout::header"></header>
+<h2>Thymeleaf Demo</h2>
+<h3>1. Biểu thức ${...}: Lấy giá trị biến</h3>
+<div>
+    <!-- Hiển thị giá trị biến rs trong model -->
+    <h4 th:text="${rs}"></h4>
+    <p th:text="${ra}"></p>
+    <!-- Nối chuỗi trong biểu thức ${}: + hoặc || -->
+    <h4 th:text="'Công ty '+${rs}"></h4>
+    <p th:text="|Công ty ${ra}|"></p>
+</div>
+
+<h3>2. Biểu thức *{...}: Lấy giá trị thuộc tính của đối tượng</h3>
+<div th:object="${student}">
+    <h4>Thông tin đối tượng sinh viên</h4>
+    <p th:text="${student.studentId}"></p>
+    <p th:text="*{studentName}"></p>
+    <p th:text="*{age}"></p>
+    <p th:text="*{status}"></p>
+</div>
+<h3 th:text="#{message.title}"></h3>
+<p th:text="#{message.content}"></p>
+<h3>4. Biểu thức @{...}: Biểu thức đường dẫn URL - Link</h3>
+<table border="1">
+    <thead>
+    <tr>
+        <th>No</th>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Age</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody th:each="student,loop:${listStudents}">
+    <tr th:object="${student}">
+        <td th:text="${loop.index+1}"></td>
+        <td th:text="*{studentId}"></td>
+        <td th:text="*{studentName}"></td>
+        <td th:text="*{age}"></td>
+        <!-- Cách 1: Sử dụng toán tử 3 ngôi -->
+<!--        <td th:text="*{status?'Actice':'Inactive'}"></td>-->
+        <!-- Cách 2: Sử dụng th:if -->
+<!--        <td>-->
+<!--            <span th:if="*{status==true}">Active</span>-->
+<!--&lt;!&ndash;            <span th:if="*{status==false}">Inactive</span>&ndash;&gt;-->
+<!--            <span th:unless="*{status==true}">Inactive</span>-->
+<!--        </td>-->
+        <!-- Cách 3: Sử dụng th:switch và th:case -->
+        <td th:switch="*{status}">
+            <span th:case="true">Active</span>
+            <span th:case="false">Inactive</span>
+            <span th:case="*">Other</span>
+        </td>
+        <td>
+            <!-- <a href="homeController/home/update?studentId=${student.studentId}"></a> -->
+            <a th:href="@{home/update(studentId=*{studentId})}">Update</a>
+            <a href="">Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<footer th:insert="layout::footer"></footer>
+</body>
+</html>
